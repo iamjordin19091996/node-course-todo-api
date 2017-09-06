@@ -244,9 +244,7 @@ describe('POST /users', () => {
       .post('/users')
       .send({email, password})
       .expect(400)
-      /*.expect((res) => {
-        expect(res.body.errors).toExist();
-      })*/
+      /**/
       .end(done);
   });
 
